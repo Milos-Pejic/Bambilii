@@ -1,0 +1,398 @@
+    @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Raleway:wght@300;400;600&display=swap");
+     :root {
+        --primary: #fe8e45;
+        --blue: #4cb5f5;
+        --gray: #b7b8b6;
+        --darkGreen: #34675c;
+        --green: #35c1a1;
+        --text: #a8aaac;
+        --white: #fff;
+        --rose: #fcede8;
+        --textcolor: #7d8085;
+        --fontSize: 16px;
+        --font: "Raleway", sans-serif;
+        --transition: .3s ease;
+        --font-family: "Lora", serif;
+        --padding: 80px 0;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .container {
+        max-width: 1140px;
+        margin: auto;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Lora", serif;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    a:hover {
+        transition: var(--transition);
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    body {
+        font-family: var(--font);
+        line-height: 1.6;
+        background-color: var(--rose);
+        color: var(--textcolor);
+    }
+    /********
+nav
+********/
+    
+    nav {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .mynavbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background: var(--rose);
+    }
+    
+    nav .logo {
+        color: var(--green);
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        font-family: "Lora", serif;
+    }
+    
+    nav .logo:hover {
+        color: var(--primary);
+    }
+    
+    nav .logo span {
+        color: var(--primary);
+    }
+    
+    nav .logo span:hover {
+        color: var(--green);
+        transition: var(--transition);
+    }
+    
+    nav .topnav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav .topnav li {
+        margin-left: 30px;
+    }
+    
+    nav .topnav li a {
+        color: var(--green);
+        text-transform: uppercase;
+    }
+    
+    nav .topnav li a:hover {
+        color: var(--primary);
+        transition: var(--transition);
+    }
+    /*******
+    header
+    ******/
+    
+    header {
+        background-image: linear-gradient(rgba(252, 237, 232, 0.8), rgba(252, 237, 232, 0.8)), url(../img/header1.png.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+        background-position: top left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 30px;
+        margin-top: 100px!important;
+    }
+    
+    header h1 {
+        font-size: 3rem;
+        color: var(--primary);
+    }
+    
+    header p {
+        font-size: 1.5rem;
+        padding: 50px 0;
+        color: var(--green);
+    }
+    
+    header button {
+        border: none;
+        padding: 15px 30px;
+        font-size: 1rem;
+        background: var(--primary);
+        color: var(--white);
+    }
+    
+    header button:hover {
+        background: var(--green);
+        color: var(--white);
+    }
+    /********
+obambiju
+********/
+    
+    #obambiju .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 20px;
+    }
+    
+    #obambiju .container article:first-child {
+        flex: 0 0 50%;
+    }
+    
+    #obambiju .container article:first-child img {
+        width: 70%;
+    }
+    
+    #obambiju .container article:last-child {
+        flex: 0 0 50%;
+    }
+    
+    #obambiju .container article:last-child h2 {
+        color: var(--primary);
+        font-size: 3rem;
+    }
+    
+    #obambiju .container article:last-child p {
+        font-size: 1.2rem;
+        text-align: justify;
+        padding-top: 20px;
+    }
+    /********
+interesovanja
+********/
+    
+    #interesovanja {
+        padding: var(--padding);
+    }
+    
+    #interesovanja article {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #interesovanja article div {
+        flex: 0 0 50%;
+    }
+    
+    #interesovanja .slika1 {
+        background-image: url(../img/planinarenje.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #interesovanja .slika2 {
+        background-image: url(../img/Dona.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #interesovanja .text {
+        padding: 40px 10px;
+    }
+    
+    #interesovanja .text h2 {
+        font-size: 2rem;
+    }
+    
+    #interesovanja article:first-child .text h2 {
+        color: var(--green);
+    }
+    
+    #interesovanja article:last-child .text h2 {
+        color: var(--primary);
+    }
+    /*******
+slider
+*******/
+    
+    #slider {
+        padding: 60px 10px;
+    }
+    
+    #slider h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 2rem;
+        color: var(--primary);
+    }
+    /*******
+kontakt
+*******/
+    
+    footer {
+        padding: 50px 10px;
+        border: 3px solid var(--green);
+        border-image-source: linear-gradient(45deg, rgba(254, 142, 69), rgba(53, 193, 161));
+        border-image-slice: 1;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    footer article:first-child {
+        flex: 0 0 60%;
+    }
+    
+    footer article:last-child {
+        flex: 0 0 35%;
+    }
+    
+    footer form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    form input,
+    textarea {
+        padding: 10px;
+        background: transparent;
+        margin-bottom: 10px;
+        border: 1px solid var(--green);
+        color: var(--primary);
+        font-size: 1rem;
+    }
+    
+    footer form input {
+        flex: 0 0 48%;
+    }
+    
+    footer form textarea {
+        flex: 0 0 100%;
+    }
+    
+    footer button {
+        border: none;
+        padding: 15px 30px;
+        font-size: 1rem;
+        background: var(--primary);
+        color: var(--white);
+    }
+    
+    footer button:hover {
+        background: var(--green);
+        color: var(--white);
+    }
+    
+    footer i {
+        color: var(--green);
+    }
+    
+    footer i:hover {
+        color: var(--primary);
+    }
+    
+    footer article:last-child div {
+        line-height: 2;
+        border-bottom: 1px solid rgba(255, 255, 255, .2);
+        padding-bottom: 20px;
+        font-size: 1.2rem;
+        color: var(--primary);
+    }
+    
+    footer article:last-child p {
+        color: var(--primary);
+    }
+    /*********
+    responsive
+    *********/
+    
+    @media(max-width: 768px) {
+        .mynavbar {
+            flex-direction: column;
+            text-align: center;
+        }
+        .mynavbar .topnav li {
+            margin: 10px;
+            font-size: 11px;
+        }
+        header {
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            height: 70vh;
+        }
+        #obambiju .container {
+            flex-direction: column;
+            padding: 40px 10px;
+        }
+        #obambiju .container article:first-child {
+            flex: 0 0 100%;
+        }
+        #obambiju .container article:first-child img {
+            width: 100%;
+        }
+        #obambiju .container article:last-child {
+            order: -1;
+            padding-bottom: 20px;
+        }
+        #obambiju .container article:last-child h2 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        #obambiju .container article:last-child p {
+            line-height: 1.3;
+        }
+        #interesovanja {
+            padding: 20px 0;
+        }
+        #interesovanja article div {
+            flex: 0 0 100%;
+        }
+        #interesovanja .slika1,
+        #interesovanja .slika2 {
+            height: 250px;
+        }
+        #interesovanja {
+            padding: 20px;
+        }
+        #interesovanja .dva {
+            order: -1;
+        }
+        footer article:first-child {
+            flex: 0 0 100%;
+        }
+        footer article:last-child {
+            flex: 0 0 100%;
+        }
+        footer form {
+            flex-direction: column;
+        }
+        footer article:last-child {
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
